@@ -1,0 +1,57 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap"
+  rel="stylesheet"
+/>
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cheque</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center id="page-cheque">
+  <div class="simplistic-vr-content">
+    <ion-row class="scan-container-top">
+      <ion-row class="scan-image-container">
+        <div class="image-container">
+          <img id="vr-logoimg" src="build/assets/imgs/no-image.png" />
+        </div>
+        <p>Start recognizing images</p>
+      </ion-row>
+      <ion-row class="buttons-container">
+        <button ion-button (click)="takePicture($event)">
+          Take Picture
+        </button>
+        <button
+          ion-button
+          *ngIf="viewPlatform === 'mobile'"
+          (click)="chooseFromGallery($event)"
+        >Upload Image</button>
+        <button
+          ion-button
+          *ngIf="viewPlatform === 'web'"
+        >
+          <input
+            type="file"
+            accept="image/*"
+            (input)="uploadImagefromWeb($event)"
+            id="img-container-input"
+            style="width: 100%;position: absolute;top: 0;height: 100%;left: 0;opacity: 0;"
+          />
+          Upload Image
+        </button>
+      </ion-row>
+    </ion-row>
+    <ion-row class="results-container">
+      <h4>Results</h4>
+      <ion-row class="spinner-container">
+        <ion-spinner id="spinner"></ion-spinner>
+      </ion-row>
+      <p id="result">
+        Objects recognized in the image will appear here as results
+      </p>
+      <ion-row class="table-container">
+        <table id="vr-result"></table>
+      </ion-row>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,50 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap"
+  rel="stylesheet"
+/>
+<ion-header>
+  <ion-navbar>
+    <ion-title>Billpay</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding text-center id="page-billpay">
+  <h2 class="title">Bill Payments</h2>
+  <h4 class="subTitle">Your one stop for all your bill payments</h4>
+
+  <img
+    id="offerBanner"
+    style="width:100%; border-radius:1em; margin-top:1em;"
+    src="build/assets/imgs/offer-banner.png"
+  />
+  <h2 class="heading">Upcoming Bills</h2>
+
+  <ion-list style="width:100%">
+    <ion-item class="card" *ngFor="let item of upcomingList">
+      <div
+        style="display:flex; flex-direction:row;justify-content:space-between;"
+      >
+        <div style=" flex-direction:column;">
+          <h2>{{item.bill}}</h2>
+          <h4>{{item.desc}}</h4>
+        </div>
+        <h2>{{item.amt}}</h2>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <h2 class="heading">Recent Bill Payments</h2>
+
+  <ion-list style="width:100%">
+    <ion-item class="card" *ngFor="let item of recentList">
+      <div
+        style="display:flex; flex-direction:row;justify-content:space-between;"
+      >
+        <div style=" flex-direction:column;">
+          <h2>{{item.bill}}</h2>
+          <h4>{{item.desc}}</h4>
+        </div>
+        <h2>{{item.amt}}</h2>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

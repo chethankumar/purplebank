@@ -1,0 +1,32 @@
+{
+  "platforms": [
+    {
+      "applicationKey": {
+        "version": "1.0.0",
+        "clientPlatform": "ios",
+        "bundleId": "com.purple.bank"
+      },
+      "displayName": "purplebank",
+      "scopeElementMapping": {
+        "liveupdate.mobileclient": ""
+      }
+    }
+  ],
+  "services": [
+    {
+      "schema": {
+        "features": {
+          "offerbanner": {
+            "internalId": "344ef7fc-84f0-4026-bddf-a6feb7a227e2",
+            "name": "Offers Banner",
+            "description": null,
+            "defaultValue": true,
+            "value": null
+          }
+        },
+        "properties": {}
+      },
+      "name": "liveupdate"
+    }
+  ]
+}

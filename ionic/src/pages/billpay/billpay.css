@@ -1,0 +1,56 @@
+page-billpay ion-navbar .toolbar-background{
+  font-family: Raleway;
+  background: hsla(276, 91%, 79%, 1);
+  background: linear-gradient(180deg, #d399fa 0%, hsla(254, 74%, 65%, 1) 100%);
+  color: #ffffff;
+}
+
+#page-billpay {
+  font-family: Raleway;
+  background-color: #f9f6ff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+}
+
+#page-billpay .title{
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: left;
+  width: 100%;
+  margin: 0.4em 0 0 1em;
+  color: #6B1B74;
+}
+
+#page-billpay .subTitle{
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: left;
+  width: 100%;
+  margin: 0.4em 0 0 4em;
+  color:#484848;
+}
+
+#page-billpay .heading{
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: left;
+  width: 100%;
+  margin: 1em 0 1em 1em;
+  color:#484848;
+}
+
+#page-billpay .card{
+  width: 90%;
+  border-radius: 4px;
+  margin:1em;
+}
+
+#page-billpay .card h2{
+  font-weight: 700;
+  color: #484848;
+  margin-top: 0.4em;
+}

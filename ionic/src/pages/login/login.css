@@ -1,0 +1,301 @@
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#page-login .scroll-content {
+    margin-top: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+page-login ion-navbar .toolbar-background {
+    background: transparent;
+    border: none !important;
+}
+
+.platform-core page-login .wave-2,
+.platform-core page-login .wave-1,
+.platform-core page-login ion-header {
+    display: none;
+}
+
+.platform-core page-login ion-content {
+    background-image: linear-gradient(-45deg, #5C258D, #4389A2);
+}
+
+page-login .wave-2 {
+    position: absolute;
+    top: -31%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-image: linear-gradient(to right top, #4389a2, #3b8098, #33768e, #2b6d85, #22647b);
+    transform: skewY(20deg);
+    transform-origin: 0;
+    width: 100%;
+    opacity: 0.5;
+    height: 250px;
+}
+
+page-login .wave-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-image: linear-gradient(to right top, #5c258d, #50207b, #441a6a, #391559, #2e1049);
+    transform: skewY(-20deg);
+    transform-origin: 0;
+    width: 100%;
+    opacity: 0.5;
+    top: -5%;
+    height: 250px;
+}
+
+.platform-core page-login .login100-form-title {
+    color: #fff;
+}
+
+.platform-core page-login .wrap-login100 {
+    background: transparent;
+}
+
+page-login .toolbar-title {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: #e6e6e6;
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap-login100 {
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 90px;
+    padding-top: 50px;
+}
+
+.login100-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.login100-form-title {
+    font-size: 30px;
+    color: #403866;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-family: Raleway;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    background-color: #e6e6e6;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
+
+.input100 {
+    font-family: 'Raleway';
+    color: #403866;
+    line-height: 1.2;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    background: 0 0;
+    height: 62px;
+    padding: 0 20px 0 38px;
+    outline: none;
+    border: none;
+}
+
+.focus-input100 {
+    position: absolute;
+    display: block;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    pointer-events: none;
+    border: 1px solid #827ffe;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    -webkit-transform: scaleX(1.1) scaleY(1.3);
+    -moz-transform: scaleX(1.1) scaleY(1.3);
+    -ms-transform: scaleX(1.1) scaleY(1.3);
+    -o-transform: scaleX(1.1) scaleY(1.3);
+    transform: scaleX(1.1) scaleY(1.3);
+}
+
+.forgot-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input100:focus+.focus-input100 {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.input-checkbox100 {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 11px system-ui;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    box-sizing: border-box;
+    padding: 0;
+    display: none;
+}
+
+.input-checkbox100:checked+.label-checkbox100::before {
+    color: #827ffe;
+}
+
+.label-checkbox100 {
+    font-family: 'Raleway';
+    font-size: 16px;
+    color: #999;
+    line-height: 1.2;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.label-checkbox100::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 13px;
+    color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    background: #fff;
+    border: 2px solid #827ffe;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.txt1 {
+    font-family: 'Raleway';
+    font-size: 16px;
+    color: #827ffe;
+    line-height: 1.4;
+}
+
+.container-login100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 17px;
+}
+
+.login100-form-btn {
+    font-family: 'Raleway';
+    font-size: 16px;
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 62px;
+    background-color: #827ffe;
+    border-radius: 3px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    outline: none !important;
+    border: none;
+}

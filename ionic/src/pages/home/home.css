@@ -1,0 +1,165 @@
+#page-home {
+  --theme-primary-color: #f9f6ff;
+  background: var(--theme-primary-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#page-home .headr {
+  position: absolute;
+  height: 20em;
+  width: 100%;
+  background: #6B1B74;
+  top: 0;
+  text-align: left;
+}
+
+#page-home .headr .blob {
+  position: absolute;
+  top: -48%;
+  width: 124%;
+  left: -18%;
+  opacity: 0.2;
+}
+
+#page-home .content {
+  z-index: 1;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-home .hero {
+  text-align: left;
+  width: 100%;
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+#page-home .heroTxt {
+  color: #f9f6ff;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+#page-home .heroSubTxt {
+  color: #f9f6ff;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 3.4rem;
+  padding: 0;
+  margin: 0;
+}
+
+#page-home .account {
+  margin-top: 10em;
+  width: 100%;
+  text-align: left;
+}
+
+#page-home .account .accTitle {
+  color: #484848;
+  font-family: Raleway;
+  font-weight: 900;
+}
+
+#page-home .account .accImgContainer {
+  position: absolute;
+  width: 86%;
+  margin-top: 1.2em;
+}
+
+#page-home .account .accImgContainer .accImg {
+  width: 100%;
+  border-radius: 8px;
+  position: absolute;
+}
+
+#page-home .account .accImgContainer .cardNumber {
+  font-weight: 600;
+  position: absolute;
+  top: 4.8em;
+  left: 1.4em;
+  font-family: Raleway;
+  color: #f9f6ff;
+}
+
+#page-home .account .accImgContainer .balance {
+  font-weight: 900;
+  position: absolute;
+  top: 0.4em;
+  left: 1.4em;
+  font-family: Raleway;
+  color: #f9f6ff;
+  font-size: 2.6rem;
+}
+
+#page-home .account .accImgContainer .cardName {
+  font-weight: 400;
+  position: absolute;
+  top: 8em;
+  left: 1.4em;
+  text-transform: uppercase;
+  font-family: Raleway;
+  color: #f9f6ff;
+  font-size: 2rem;
+}
+
+#page-home .content .recent {
+  margin-top: 20em;
+  width: 100%;
+  text-align: left;
+}
+
+#page-home .content .recent .txnItem {
+  margin: 0.2em;
+  width: 99%;
+  text-align: left;
+  background: #FEECFF;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.2em;
+}
+
+#page-home .content .recent .txnItem p {
+  color: #6B1B74;
+  font-size: 1.4rem;
+  font-family: Raleway;
+  font-weight: 600;
+}
+
+#page-home .content .recent .recentTitle {
+  color: #484848;
+  font-family: Raleway;
+  font-weight: 900;
+}
+
+#page-home .tabs {
+  position: absolute;
+  bottom: 0;
+  height: 7em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#page-home .tabs .icon {
+  font-size: 2.7em;
+  color: #6B1B74;
+}
+
+#page-home .tabs .tabTxt {
+  font-size: 0.8em;
+  font-family: Raleway;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #6B1B74;
+}

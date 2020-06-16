@@ -1,0 +1,59 @@
+<ion-content padding text-center id="page-home">
+  <section class="headr">
+    <div class="blob">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill="#FF0066"
+          d="M63.6,-20.9C69.3,-3.2,51.6,21.8,28.1,38.9C4.6,56,-24.7,65.2,-44.1,53C-63.6,40.7,-73,7,-64,-15.3C-55,-37.6,-27.5,-48.5,0.7,-48.7C29,-48.9,57.9,-38.6,63.6,-20.9Z"
+          transform="translate(100 100)"
+        />
+      </svg>
+    </div>
+  </section>
+  <section class="content">
+    <div class="hero">
+      <h2 class="heroTxt">Hello {{username}}</h2>
+      <h1 class="heroSubTxt">How was your day</h1>
+    </div>
+    <div class="account">
+      <h2 class="accTitle">Account Summary</h2>
+      <div class="accImgContainer">
+        <img class="accImg" src="build/assets/imgs/card.png" />
+        <h2 class="balance">$ {{balance}}</h2>
+        <h2 class="cardNumber">{{cardNumber}}</h2>
+        <h2 class="cardName">{{name}}</h2>
+      </div>
+    </div>
+    <div class="recent">
+      <h2 class="recentTitle">Recent Transactions</h2>
+      <ion-list>
+        <ion-item class="txnItem" *ngFor="let item of transactionList">
+          <div
+            style="display:flex;flex-direction:row;justify-content:space-between;"
+          >
+            <p>{{item.txn}}</p>
+            <p>{{item.amt}}</p>
+          </div>
+        </ion-item>
+      </ion-list>
+    </div>
+  </section>
+  <section class="tabs">
+    <div (click)="page('transfer')">
+      <ion-icon class="icon" size="20px" name="ios-send"></ion-icon>
+      <p class="tabTxt">Transfer</p>
+    </div>
+    <div (click)="page('bill')">
+      <ion-icon class="icon" name="ios-card"></ion-icon>
+      <p class="tabTxt">Bills</p>
+    </div>
+    <div (click)="page('chat')">
+      <ion-icon class="icon" name="ios-chatbubbles"></ion-icon>
+      <p class="tabTxt">Chatbot</p>
+    </div>
+    <div (click)="page('cheque')">
+      <ion-icon class="icon" name="checkmark-circle"></ion-icon>
+      <p class="tabTxt">Cheques</p>
+    </div>
+  </section>
+</ion-content>
